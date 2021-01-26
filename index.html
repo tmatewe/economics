@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="eco.css" />
+    <title>Economics</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>Price elastricity of demand</h4>
+          <input type="text" value="Previous quantity" class="content"> <input type="text" id="qty1" value="80" /><br><input type="text" value="Current quantity" class="content">  <input
+            type="text"
+            id="qty2"
+            value="100"
+          /><br /><br />
+          <input type="text" value="Previous price" class="content"><input type="text" id="price1" value="4" /><br><input type="text" value="Current price" class="content"><input
+            type="text"
+            id="price2"
+            value="3"
+          />
+          <br />
+          <br />
+
+          <button class="btn btn-outline-dark btn-sm " value="Point">Point method</button>
+          <input type='text' id="answer1"></input>
+          <input type='text' id="type1"></input>
+          <br /><br>
+          <button class="btn btn-outline-dark btn-sm " value="Arc" >Arc method</button>
+          <input type='text' id="answer2"></input>
+          <input type='text' id="type2"></input><br><br>
+          <button class="btn btn-outline-dark btn-sm " value="Gradient">Gradient</button>
+          <input type="text" id="gradient1">
+          <input type="text" id="gradient2"><br><br>
+          <h4>Calculating revenue</h4>
+          <button class="btn btn-outline-dark btn-sm " value="revenue1">Previous revenue</button>
+          <input type='text' id="rev1"></input><br><br>
+          <button class="btn btn-outline-dark btn-sm" value="revenue2">Current revenue</button>
+          <input type='text' id="rev2"></input><br><br>
+        </div>
+        <div class="col-sm-4">
+          <h4>Income elastricity</h4>
+          <input type="text" value="Previous income" class="content"><input type="text" id="income1" value="4000" /><br><input type="text" value="Current income" class="content"><input
+          type="text"
+          id="income2"
+          value="6000"
+        /><br /><br />
+        <input type="text" value="Previous quantity" class="content"> <input type="text" id="qty1" value="80" /><br><input type="text" value="Current quantity" class="content">  <input
+          type="text"
+          id="qty2"
+          value="100"
+        /><br /><br />
+          <button class="btn btn-outline-dark btn-sm" value="Income">Click</button>
+          <input type='text' id="income"></input><br><br>
+          <input type="text" id="comment"></input>
+        </div>
+        <div class="col-sm-4">
+          <h4>Cross elastricity</h4>
+          
+        <input type="text" value="Previous quantity(A)" class="content"><input type="text" id="qty1" value="80" /><br><input type="text" value="Current quantity (A)" class="content"><input
+          type="text"
+          id="qty2"
+          value="100"
+        /><br /><br />
+        <input type="text" value="Current price (B)" class="content"><input type="text" id="price1" value="4" /><br><input type="text" value="Current price (B)" class="content"><input
+        type="text"
+        id="price2"
+        value="3"
+      />
+      <br />
+      <br />
+          <button class="btn btn-outline-dark btn-sm" value="Cross">Click</button>
+          <input type='text' id="cross"></input><br><br>
+          <input type="text" id="meaning"></input>
+        </div>
+        <!-- marginal utility 1 -->
+        <div class="col-sm-4">
+          Price:<input type="text" id="p1" value='5'>
+          <h4>Product 1</h4>
+          <input type="text" class="small" value='Qty'><input type="text" value='MU'>
+          <input type="text" value="TU">
+          <input type="text" value="MWU"><br>
+          <input type="text" class="small" value='1'><input type="text" id="one1" value='60'>
+          <input type="text" id="one2">
+          <input type="text" id="one3" value=""><br>
+          <input type="text" class="small" value='2'><input type="text" id="two1"  value='50'>
+          <input type="text" id="two2">
+          <input type="text" id="two3"><br>
+          <input type="text" class="small" value='3'><input type="text" id="three1" value='40'>
+          <input type="text" id="three2">
+          <input type="text" id="three3"><br>
+          <input type="text" class="small" value='4'><input type="text" id="four1" value='30' >
+          <input type="text" id="four2">
+          <input type="text" id="four3"><br>
+          <input type="text" class="small" value='5'><input type="text" id="five1" value='25'>
+          <input type="text" id="five2">
+          <input type="text" id="five3"><br>
+          <input type="text" class="small" value='6'><input type="text" id="six1" value='20'>
+          <input type="text" id="six2">
+          <input type="text" id="six3"><br>
+          <input type="text" class="small" value='7'><input type="text" id="seven1" value='5' >
+          <input type="text" id="seven2">
+          <input type="text" id="seven3"><br>
+          <input type="text" class="small" value='8'><input type="text" id="eight1" value='0' >
+          <input type="text" id="eight2">
+          <input type="text" id="eight3"><br>
+          <input type="text" class="small" value='9'><input type="text" id="nine1" value='-5' >
+          <input type="text" id="nine2">
+          <input type="text" id="nine3"><br>
+          <input type="text" class="small" value='10'><input type="text" id="ten1" value='-10' >
+          <input type="text" id="ten2">
+          <input type="text" id="ten3"><br><br>
+          <button class="btn btn-outline-dark btn-block btn-sm" value="Click1">Click</button>
+      </div>
+          <!-- marginal utility 2 -->
+      <div class="col-sm-4">
+        Price:<input type="text" id="p2" value='10'>
+        <h4>Product 2</h4>
+        <input type="text" class="small" value='Qty'><input type="text" value='MU'>
+        <input type="text" value="TU">
+        <input type="text" value="MWU"><br>
+        <input type="text" class="small" value='1'><input type="text" id="on1" value='200'>
+        <input type="text" id="on2">
+        <input type="text" id="on3" value=""><br>
+        <input type="text" class="small" value='2'><input type="text" id="tw1"  value='180'>
+        <input type="text" id="tw2">
+        <input type="text" id="tw3"><br>
+        <input type="text" class="small" value='3'><input type="text" id="thre1" value='160'>
+        <input type="text" id="thre2">
+        <input type="text" id="thre3"><br>
+        <input type="text" class="small" value='4'><input type="text" id="fou1" value='140' >
+        <input type="text" id="fou2">
+        <input type="text" id="fou3"><br>
+        <input type="text" class="small" value='5'><input type="text" id="fiv1" value='120'>
+        <input type="text" id="fiv2">
+        <input type="text" id="fiv3"><br>
+        <input type="text" class="small" value='6'><input type="text" id="si1" value='100'>
+        <input type="text" id="si2">
+        <input type="text" id="si3"><br>
+        <input type="text" class="small" value='7'><input type="text" id="seve1" value='80' >
+        <input type="text" id="seve2">
+        <input type="text" id="seve3"><br>
+        <input type="text" class="small" value='8'><input type="text" id="eigh1" value='60' >
+        <input type="text" id="eigh2">
+        <input type="text" id="eigh3"><br>
+        <input type="text" class="small" value='9'><input type="text" id="nin1" value='40' >
+        <input type="text" id="nin2">
+        <input type="text" id="nin3"><br>
+        <input type="text" class="small" value='10'><input type="text" id="te1" value='20' >
+        <input type="text" id="te2">
+        <input type="text" id="te3"><br><br>
+        <button class="btn btn-outline-dark btn-block btn-sm" value="Click2">Click</button>
+    </div>
+    <div class="col-sm-4">
+      Price:<input type="text" id="p3" value='20'>
+      <h4>Product 3</h4>
+      <input type="text" class="small" value='Qty'><input type="text" value='MU'>
+      <input type="text" value="TU">
+      <input type="text" value="MWU"><br>
+      <input type="text" class="small" value='1'><input type="text" id="o1" value='400'>
+      <input type="text" id="o2">
+      <input type="text" id="o3" value=""><br>
+      <input type="text" class="small" value='2'><input type="text" id="t1"  value='360'>
+      <input type="text" id="t2">
+      <input type="text" id="t3"><br>
+      <input type="text" class="small" value='3'><input type="text" id="thr1" value='320'>
+      <input type="text" id="thr2">
+      <input type="text" id="thr3"><br>
+      <input type="text" class="small" value='4'><input type="text" id="fo1" value='300' >
+      <input type="text" id="fo2">
+      <input type="text" id="fo3"><br>
+      <input type="text" class="small" value='5'><input type="text" id="fi1" value='280'>
+      <input type="text" id="fi2">
+      <input type="text" id="fi3"><br>
+      <input type="text" class="small" value='6'><input type="text" id="s1" value='260'>
+      <input type="text" id="s2">
+      <input type="text" id="s3"><br>
+      <input type="text" class="small" value='7'><input type="text" id="sev1" value='220' >
+      <input type="text" id="sev2">
+      <input type="text" id="sev3"><br>
+      <input type="text" class="small" value='8'><input type="text" id="eig1" value='160' >
+      <input type="text" id="eig2">
+      <input type="text" id="eig3"><br>
+      <input type="text" class="small" value='9'><input type="text" id="ni1" value='120' >
+      <input type="text" id="ni2">
+      <input type="text" id="ni3"><br>
+      <input type="text" class="small" value='10'><input type="text" id="tte1" value='80' >
+      <input type="text" id="tte2">
+      <input type="text" id="tte3"><br><br>
+      <button class="btn btn-outline-dark btn-block btn-sm" value="Click3">Click</button>
+  </div>
+  <div class="col-sm-4">
+
+   <input type="text" id="commonFactorText" value="Common factor"><input type="text" id="commonFactor"><br>
+    <input type="text" id="budgetText" value="Budget"><input type="text" id="amountToSpent"><br><br>
+    <h4>Total utility</h4>
+    <input type="text" id="firstTU">
+    <input type="text" id="secondTU">
+    <input type="text" id="thirdTU"><br><br>
+    <h5>Final answer</h5>
+    <input type="text" id="final-utility"><br><br>
+    <h4>Equilibrium</h4>
+    <input type="text" class="medium" value='Products'><input type="text" value='Quantity'>
+    <input type="text" class="medium" value="Price">
+    <input type="text" class="medium" value="Budget"><br>
+    <input type="text" class="medium" value='Product 1'><input type="text" id="qtyPro1">
+    <input type="text" class="medium"id="pricePro1">
+    <input type="text" class="medium"id="budgetPro1" value=""><br>
+    <input type="text" class="medium" value='Product 2'><input type="text" id="qtyPro2">
+    <input type="text" class="medium" id="pricePro2">
+    <input type="text" class="medium" id="budgetPro2"><br>
+    <input type="text" class="medium" value='product 3'><input type="text" id="qtyPro3" >
+    <input type="text" class="medium" id="pricePro3">
+    <input type="text" class="medium" id="budgetPro3">
+    <input type="text" class="medium "><input type="text">
+    <input type="text" class="medium" >
+    <input type="text" class="medium" id="totalBudget">
+    <br><br>
+    <h4>More information</h4>
+    <h5 id="moreInfo"></h5>
+   <br><br>
+    <button class="btn btn-outline-dark btn-block btn-sm" value="Click4">Click here</button>
+</div>
+      <div class="col-sm-4">
+        <h4>Gross Domestic Product</h4>
+        <input type="text" value="Previous norminal" class="content"><input type="text" id="norminal1" value="80" /><br><input type="text" value="Current norminal" class="content"><input
+          type="text"
+          id="norminal2"
+          value="100"
+        /><br /><br />
+        <input type="text" value="Current real" class="content"><input type="text" id="real1" value="90" /><br><input type="text" value="Current real" class="content"><input
+          type="text"
+          id="real2"
+          value="120"
+        />
+        <br />
+        <br />
+
+        <button class="btn btn-outline-dark btn-sm " value="Deflator1">Previous deflactor</button>
+        <input type='text' id="deflator1"></input>
+        <br /><br>
+        <button class="btn btn-outline-dark btn-sm " value="Deflator2">Current deflactor</button>
+        <input type='text' id="deflator2"></input>
+        <br /><br>
+        <button class="btn btn-outline-dark btn-sm " value="Growth">Growth rate</button>
+        <input type='text' id="growth"></input><br><br>
+        <button class="btn btn-outline-dark btn-sm" value="Inflation">Inflation rate</button>
+        <input type='text' id="inflation"></input><br><br>
+      </div>
+      <div class="col-sm-4">
+        <h4>Economic Profit</h4>
+        <input type="text" value="Total revenue"><input type="text" id="revenue" value="100" /> <br><br>
+      <input type="text" value="Implicit costs"> <input type="text" id="implicit" value="20"
+      /><br /><br>
+      <input type="text" value="Explicit costs"><input type="text" id="explicit" value="40" /> <br /><br>
+        <button class="btn btn-outline-dark btn-sm" value="Economic_profit">Economics profit</button>
+        <input type='text' id="ecoPro"></input><br><br>
+        <button class="btn btn-outline-dark btn-sm" value="Accounting_profit">Accounting profit</button>
+        <input type='text' id="accPro"></input><br><br>
+        <button class="btn btn-outline-dark btn-sm" value="Economic_costs">Economic costs</button>
+        <input type='text' id="ecoCosts"></input><br><br>
+      </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="eco.js"></script>
+  </body>
+</html>
