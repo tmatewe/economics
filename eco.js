@@ -2,10 +2,10 @@ let count = 0;
 
 function calc(e) {
   if (e.target.value === "Point") {
-    var qty1 = document.getElementById("qty1").value;
-    var qty2 = document.getElementById("qty2").value;
-    var price1 = document.getElementById("price1").value;
-    var price2 = document.getElementById("price2").value;
+    var qty1 = Number(document.getElementById("qty1").value);
+    var qty2 = Number(document.getElementById("qty2").value);
+    var price1 = Number(document.getElementById("price1").value);
+    var price2 = Number(document.getElementById("price2").value);
     var answer1 = document.getElementById("answer1");
     var qtyTop = -(qty1 - qty2) / qty1;
     var priceBottom = (price1 - price2) / price1;
@@ -19,13 +19,15 @@ function calc(e) {
     }
   } else if (e.target.value === "Arc") {
     console.log(e.target.innerHTML);
-    var qty1 = document.getElementById("qty1").value;
-    var qty2 = document.getElementById("qty2").value;
-    var price1 = document.getElementById("price1").value;
-    var price2 = document.getElementById("price2").value;
+    var qty1 = Number(document.getElementById("qty1").value);
+    var qty2 = Number(document.getElementById("qty2").value);
+    var price1 = Number(document.getElementById("price1").value);
+    var price2 = Number(document.getElementById("price2").value);
     var answer2 = document.getElementById("answer2");
     var qtyBottom = (qty1 + qty2) / 2;
+    console.log(qtyBottom);
     var qtyTop = -(qty1 - qty2) / qtyBottom;
+    console.log(qtyTop);
     var priceTop = (price1 + price2) / 2;
     var priceBottom = (price1 - price2) / priceTop;
     answer2.value = (qtyTop / priceBottom).toFixed(2);
@@ -594,7 +596,7 @@ function calc(e) {
       tuOne7,
       tuOne8,
       tuOne9,
-      tuOne10,
+      tuOne10
     ];
 
     console.log(firstTU);
@@ -619,7 +621,7 @@ function calc(e) {
       wmuOne7,
       wmuOne8,
       wmuOne9,
-      wmuOne10,
+      wmuOne10
     ];
 
     //second weighted marginal utility
@@ -644,7 +646,7 @@ function calc(e) {
       tuTwo7,
       tuTwo8,
       tuTwo9,
-      tuTwo10,
+      tuTwo10
     ];
     console.log(secondTU);
 
@@ -669,7 +671,7 @@ function calc(e) {
       wmuTwo7,
       wmuTwo8,
       wmuTwo9,
-      wmuTwo10,
+      wmuTwo10
     ];
 
     console.log(secondWMU);
@@ -696,7 +698,7 @@ function calc(e) {
       tuThree7,
       tuThree8,
       tuThree9,
-      tuThree10,
+      tuThree10
     ];
     console.log(tuThree10);
     console.log(thirdTU);
@@ -721,7 +723,7 @@ function calc(e) {
       wmuThree7,
       wmuThree8,
       wmuThree9,
-      wmuThree10,
+      wmuThree10
     ];
 
     //Finding common factor
@@ -755,7 +757,7 @@ function calc(e) {
       wmuThree7,
       wmuThree8,
       wmuThree9,
-      wmuThree10,
+      wmuThree10
     ];
     console.log(arrOfMwu);
 
@@ -764,7 +766,7 @@ function calc(e) {
       const object = {};
       const result = [];
 
-      arra1.forEach((item) => {
+      arra1.forEach(item => {
         if (!object[item]) object[item] = 0;
         object[item] += 1;
       });
